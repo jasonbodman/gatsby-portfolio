@@ -1,12 +1,10 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
 const Header = () => (
   <header>
-    <div class="nav-contact">
-      <span class="nav-link center">
-        &#9776;<span class="nav-menu"> Menu</span>
+    <div className="nav-contact">
+      <span className="nav-link center">
+        &#9776;<span className="nav-menu"> Menu</span>
       </span>
     </div>
   </header>

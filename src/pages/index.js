@@ -74,7 +74,6 @@ const Title = styled.div`
 `
 
 const Section = styled.div`
-  background-color: #ccc;
   min-height: 500px;
   padding-top: 50px;
   border-top: 5px #8e4444 solid;

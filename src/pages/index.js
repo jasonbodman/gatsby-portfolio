@@ -10,7 +10,7 @@ const IndexPage = () => (
     <Container>
       <Title>
         <h1>Hi, I'm Jason!</h1>
-        <p>
+        <p className="subtitle">
           I am a freelance web designer who can help your business succeed by
           transforming your digital brand and building stronger connections with
           your customers. Let's get started!

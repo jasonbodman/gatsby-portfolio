@@ -47,6 +47,13 @@ const IndexPage = () => (
         </ServiceList>
       </SectionContent>
     </Section>
+
+    <Section id="portfolio">
+      <SectionContent>
+        <h1 className="center">Portfolio</h1>
+        <ProjectList></ProjectList>
+      </SectionContent>
+    </Section>
   </>
 )
 
@@ -89,6 +96,12 @@ const ServiceList = styled.div`
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0px;
+`
+
+const ProjectList = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 `
 
 export default IndexPage

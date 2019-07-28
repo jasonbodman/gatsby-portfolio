@@ -1,0 +1,45 @@
+import url('https://fonts.googleapis.com/css?family=Raleway|Zeyada')
+
+/* GLOBAL STYLES */
+:root {
+  background-color: #ccc;
+  font-family: Raleway, sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --blue: #2a60a0;
+  --red: #8e4444;
+}
+
+* {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* STYLES */
+.robot {
+  font-family: Raleway, sans-serif;
+}
+
+.zeyada {
+  font-family: Zeyada, sans-serif;
+}
+
+.subtitle {
+  font-size: 1rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}

@@ -61,3 +61,13 @@ h3 {
   font-family: Raleway, sans-serif;
   font-size: 1.3rem;
 }
+
+div#services {
+  background-color: #ccc;
+  color: #000;
+}
+
+div#portfolio {
+  background-color: #8e4444;
+  color: white;
+}

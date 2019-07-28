@@ -7,14 +7,7 @@
   box-sizing: border-box;
   --blue: #2a60a0;
   --red: #8e4444;
-
-  /* Background image */
-  background-image: url("../images/main2.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+  background: #ccc;
 }
 
 * {
@@ -96,6 +89,11 @@ header:hover {
 section#main {
   padding-top: 125px;
   height: 100vh;
+  background-image: url("../images/main2.jpg");
+  background-attachment: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title {

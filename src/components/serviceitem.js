@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const ServiceItem = props => (
   <Service>
-    <ServiceImage src={props.image} alt alt={props.title}></ServiceImage>
+    <ServiceImage src={props.image} alt={props.title}></ServiceImage>
     <ServiceDescription>
       <h2>{props.title}</h2>
       <p>{props.description}</p>

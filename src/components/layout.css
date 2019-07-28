@@ -112,6 +112,7 @@ section#main {
 
 section#services {
   background-color: #ccc;
+  width: 100vw;
   padding: 50px 25px;
   color: #000;
 }

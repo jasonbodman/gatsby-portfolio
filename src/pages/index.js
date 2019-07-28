@@ -18,6 +18,16 @@ const IndexPage = () => (
         </p>
       </div>
     </section>
+
+    <section className="services" id="services">
+      <h1 className="center">Services</h1>
+      <p className="subtitle center">
+        Together, we can build a website that fits your brand while helping
+        engage your customers in ways that help your business be successful.
+        Whether you need a website built from scratch or need to optimize your
+        current digital presence, I can help with a variety of business needs.
+      </p>
+    </section>
   </Layout>
 )
 

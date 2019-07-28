@@ -1,0 +1,63 @@
+/* GLOBAL STYLES */
+:root {
+  font-family: Raleway, sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --blue: #2a60a0;
+  --red: #8e4444;
+  background: #ccc;
+}
+
+* {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* STYLES */
+.robot {
+  font-family: Raleway, sans-serif;
+}
+
+.zeyada {
+  font-family: Zeyada, sans-serif;
+}
+
+.subtitle {
+  font-size: 1rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+/* ELEMENT STYLES */
+section {
+  border-bottom: 3px solid var(--red);
+}
+
+h1 {
+  font-family: Zeyada, Raleway, sans-serif;
+  font-size: 1.9rem;
+}
+
+h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-family: Raleway, sans-serif;
+  font-size: 1.3rem;
+}

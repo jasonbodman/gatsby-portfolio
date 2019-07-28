@@ -3,7 +3,6 @@ import url('https://fonts.googleapis.com/css?family=Raleway|Zeyada')
 /* GLOBAL STYLES */
 :root {
   background-color: #ccc;
-  font-family: Raleway, sans-serif;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -17,6 +16,7 @@ import url('https://fonts.googleapis.com/css?family=Raleway|Zeyada')
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Raleway, sans-serif;
 }
 
 /* STYLES */
@@ -42,4 +42,24 @@ import url('https://fonts.googleapis.com/css?family=Raleway|Zeyada')
 
 .right {
   text-align: right;
+}
+
+/* ELEMENT STYLES */
+section {
+  border-bottom: 3px solid var(--red);
+}
+
+h1 {
+  font-family: Zeyada, Raleway, sans-serif;
+  font-size: 1.9rem;
+}
+
+h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-family: Raleway, sans-serif;
+  font-size: 1.3rem;
 }

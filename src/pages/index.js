@@ -9,12 +9,14 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <section id="main">
-      <h1>Hi, I'm Jason!</h1>
-      <p>
-        I am a freelance web designer who can help your business succeed by
-        transforming your digital brand and building stronger connections with
-        your customers. Let's get started!
-      </p>
+      <div className="title right">
+        <h1>Hi, I'm Jason!</h1>
+        <p className="robot subtitle">
+          I am a freelance web designer who can help your business succeed by
+          transforming your digital brand and building stronger connections with
+          your customers. Let's get started!
+        </p>
+      </div>
     </section>
   </Layout>
 )

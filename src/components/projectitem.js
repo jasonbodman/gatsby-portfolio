@@ -14,13 +14,14 @@ const ProjectItem = props => (
 
 const Project = styled.div`
   width: 100%;
-  max-width: 700px;
+  max-width: 450px;
   background-color: #fff;
   color: #000;
   box-shadow: 0px 0px 30px -10px black;
   margin: 20px auto;
   display: block;
   border-radius: 10px;
+  padding: 15px;
 `
 
 const ProjectImage = styled.img`

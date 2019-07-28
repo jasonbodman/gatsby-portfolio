@@ -34,13 +34,11 @@ const IndexPage = () => (
             image="../images/responsive.jpg"
             description="Starting from scratch, I can build you a mobile repsonsive website that represents your brand, strategically engages your customers, and helps you meet your goals. I can incorporate a variety of features that will help make your work easier like ecommerce products or content management systems."
           />
-
           <ServiceItem
             title="Redesign and Optimization"
             image="../images/tools.jpg"
             description="If you feel that your current website needs a facelift or you recently updated your business' branding or voice, I can help to bring your vision to life while ensuring that your online presence is modern, accessible, and brings you closer to your customers."
           />
-
           <ServiceItem
             title="Feature Installation"
             image="../images/startup.jpg"

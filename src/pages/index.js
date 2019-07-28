@@ -17,6 +17,17 @@ const IndexPage = () => (
         </p>
       </Title>
     </Container>
+    <Section>
+      <SectionContent>
+        <h1 class="center">Services</h1>
+        <p class="subtitle center">
+          Together, we can build a website that fits your brand while helping
+          engage your customers in ways that help your business be successful.
+          Whether you need a website built from scratch or need to optimize your
+          current digital presence, I can help with a variety of business needs.
+        </p>
+      </SectionContent>
+    </Section>
   </>
 )
 
@@ -44,13 +55,15 @@ const Title = styled.div`
 `
 
 const Section = styled.div`
-  background-image: url(${img});
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
+  background-color: #ccc;
+  min-height: 500px;
+  padding-top: 50px;
+  border-top: 5px #8e4444 solid;
+`
+
+const SectionContent = styled.div`
+  max-width: 1000px;
+  margin: 0 auto;
 `
 
 export default IndexPage

@@ -17,7 +17,7 @@ const IndexPage = () => (
         </p>
       </Title>
     </Container>
-    <Section>
+    <Section id="services">
       <SectionContent>
         <h1 class="center">Services</h1>
         <p class="subtitle center">
@@ -29,9 +29,10 @@ const IndexPage = () => (
 
         <ServiceList>
           <ServiceItem>
-            <ServiceImage>
-              <img src="../images/responsive.jpg"></img>
-            </ServiceImage>
+            <ServiceImage
+              src="../images/responsive.jpg"
+              alt="Full Service Web Design"
+            ></ServiceImage>
             <ServiceDescription>
               <h2>Full Web Design</h2>
               <p>
@@ -45,9 +46,10 @@ const IndexPage = () => (
           </ServiceItem>
 
           <ServiceItem>
-            <ServiceImage>
-              <img src="../images/tools.jpg"></img>
-            </ServiceImage>
+            <ServiceImage
+              src="../images/tools.jpg"
+              alt="Redesign and Optimization"
+            ></ServiceImage>
             <ServiceDescription>
               <h2>Redesign and Optimization</h2>
               <p>
@@ -61,9 +63,10 @@ const IndexPage = () => (
           </ServiceItem>
 
           <ServiceItem>
-            <ServiceImage>
-              <img src="../images/startup.jpg"></img>
-            </ServiceImage>
+            <ServiceImage
+              src="../images/startup.jpg"
+              alt="Feature Installation"
+            ></ServiceImage>
             <ServiceDescription>
               <h2>Feature Installation</h2>
               <p>
@@ -124,7 +127,7 @@ const ServiceList = styled.div`
   padding: 0px;
 `
 
-const ServiceImage = styled.div`
+const ServiceImage = styled.img`
   background-color: #fff;
   border-radius: 50%;
   width: 50%;

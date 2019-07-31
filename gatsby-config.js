@@ -36,7 +36,7 @@ module.exports = {
         // if you have a private dataset
         token:
           process.env
-            .skY9olkX4Aip0pyIyzjWvzOf0Jwp6lrhI1Nj2O3l4yIDDETD0J4SyT5chZZPkcr40EDeozdm6OmbzZr3Ra23m2mmkKQXPKEm0WtfVCXBfpaEvFUKQV3INKibwH8e8edKKf6K7kfvJAy0nnBmwEtNEBHEaPM5BP2uWw8LzYOl2m5CE3zpvktO,
+            .skjRztiT1u2ljmtonfZxGrK5RNDKbflTnMNyyJZsBmLCBGmZ5ZmEjTArkHfVfluCANwUm2eEENFJXSan0A1sis3ONiJuaPsq70EtjyTLgr61SLaILP2oeqXIPF1CY9Y8XQCgO8hKI4bzi6LoM1SY4VnVPTACDE1VV5HCs3MYFWyZL6HPAkhr,
       },
     },
     `gatsby-plugin-styled-components`,

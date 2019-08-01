@@ -79,6 +79,32 @@ const IndexPage = () => (
   </>
 )
 
+export const query = graphql`
+  {
+    allSanityProject(sort: { order: ASC, fields: title }) {
+      edges {
+        node {
+          title
+          url
+          client
+          quote {
+            sanityChildren {
+              text
+            }
+          }
+          mainImage {
+            asset {
+              fluid {
+                src
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
 const Container = styled.div`
   background-image: url(${img});
   background-attachment: fixed;

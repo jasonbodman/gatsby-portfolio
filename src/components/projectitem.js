@@ -1,9 +1,10 @@
 import React from "react"
 import styled from "styled-components"
+import Image from "gatsby-image"
 
 const ProjectItem = props => (
   <Project>
-    <ProjectImage src={props.image} alt={props.title}></ProjectImage>
+    <Image fluid={props.image} alt={props.title} />
     <ProjectInfo>
       <h3>{props.title}</h3>
       <p>{props.url}</p>

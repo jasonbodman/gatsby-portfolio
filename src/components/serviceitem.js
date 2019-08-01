@@ -22,7 +22,7 @@ const ServiceImage = styled.img`
 
 const Service = styled.div`
   width: 100%;
-  width: 280px
+  width: 280px;
   margin: 15px auto;
   padding-top: 30px;
   text-align: center;

@@ -57,8 +57,8 @@ const IndexPage = ({ data }) => (
             <ProjectItem
               title={project.title}
               url={project.url}
-              image="#"
-              quote="#"
+              image={project.mainImage.asset.fluid}
+              quote={project.quote.sanityChildren}
             />
           ))}
         </ProjectList>

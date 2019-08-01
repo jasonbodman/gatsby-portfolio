@@ -9,6 +9,7 @@ const ProjectItem = props => (
       <h3>{props.title}</h3>
       <p>{props.url}</p>
       <ProjectQuote>{props.quote}</ProjectQuote>
+      <p>-{props.client}</p>
     </ProjectInfo>
   </Project>
 )

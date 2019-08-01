@@ -59,6 +59,7 @@ const IndexPage = ({ data }) => (
               url={project.url}
               image={project.mainImage.asset.fluid}
               quote={project.quote}
+              client={project.client}
             />
           ))}
         </ProjectList>

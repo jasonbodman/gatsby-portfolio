@@ -58,7 +58,7 @@ const IndexPage = ({ data }) => (
               title={project.title}
               url={project.url}
               image={project.mainImage.asset.fluid}
-              quote={project.quote.sanityChildren}
+              quote={project.quote}
             />
           ))}
         </ProjectList>
@@ -69,21 +69,17 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   {
-    allSanityProject(sort: { order: ASC, fields: title }) {
+    allSanityProject(limit: 4, sort: { fields: title }) {
       edges {
         node {
           title
           url
+          quote
           client
-          quote {
-            sanityChildren {
-              text
-            }
-          }
           mainImage {
             asset {
               fluid {
-                src
+                ...GatsbySanityImageFluid
               }
             }
           }

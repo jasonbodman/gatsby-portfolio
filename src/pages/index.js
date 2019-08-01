@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import ServiceItem from "../components/serviceitem"
 import ProjectItem from "../components/projectitem"
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <>
     <SEO title="Home" />
     <Container>
@@ -53,26 +53,14 @@ const IndexPage = () => (
       <SectionContent>
         <h1 className="center">Portfolio</h1>
         <ProjectList>
-          <ProjectItem
-            title="Mr. All-Around"
-            url="www.tomgolabook.com"
-            image="#"
-            quote='"I wanted a simple and easy website for my upcoming book and Jason delivered. He is a great communicator and was easy to work with in figuring out logistics for how the website would run. I appreciated Jason going above and beyond by providing a step by step process of how to work the website moving forward. Highlight recommend his work if you are looking for a website."'
-          />
-
-          <ProjectItem
-            title="AcuVanture"
-            url="www.acuvanture.com"
-            image="#"
-            quote='"Everything was done in a very professional and timely manner. I was able to get responses right away. Jason provided with amazing ideas that made the website stand out more. I will most definitely be referring people to Jason!"'
-          />
-
-          <ProjectItem
-            title="TZ Distributors"
-            url="www.tzdistributors.com"
-            image="#"
-            quote='"Working with Jason on our website was a great experience. His knowledge, communication, and skill to find what is right for your business was exactly what I was looking for!"'
-          />
+          {data.allSanityProject.edges.map(({ node: project }) => (
+            <ProjectItem
+              title={project.title}
+              url={project.url}
+              image="#"
+              quote="#"
+            />
+          ))}
         </ProjectList>
       </SectionContent>
     </Section>

@@ -70,7 +70,22 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   {
-    allSanityProject(limit: 4, sort: { fields: title }) {
+    allSanityService {
+      edges {
+        node {
+          title
+          description
+          mainImage {
+            asset {
+              fluid {
+                ...GatsbySanityImageFluid
+              }
+            }
+          }
+        }
+      }
+    }
+    allSanityProject {
       edges {
         node {
           title

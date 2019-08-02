@@ -4,7 +4,9 @@ import Image from "gatsby-image"
 
 const ServiceItem = props => (
   <Service>
-    <Image fluid={props.image} alt={props.title} />
+    <ServiceImage>
+      <Image fluid={props.image} alt={props.title} />
+    </ServiceImage>
     <ServiceDescription>
       <h2>{props.title}</h2>
       <p>{props.description}</p>
@@ -12,7 +14,7 @@ const ServiceItem = props => (
   </Service>
 )
 
-const ServiceImage = styled.img`
+const ServiceImage = styled.div`
   background-color: #fff;
   border-radius: 50%;
   width: 50%;
@@ -31,6 +33,7 @@ const Service = styled.div`
 
 const ServiceDescription = styled.div`
   text-align: center;
+  padding-top: 25px;
 `
 
 export default ServiceItem

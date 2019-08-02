@@ -1,9 +1,10 @@
 import React from "react"
 import styled from "styled-components"
+import Image from "gatsby-image"
 
 const ServiceItem = props => (
   <Service>
-    <ServiceImage src={props.image} alt={props.title}></ServiceImage>
+    <Image fluid={props.image} alt={props.title} />
     <ServiceDescription>
       <h2>{props.title}</h2>
       <p>{props.description}</p>

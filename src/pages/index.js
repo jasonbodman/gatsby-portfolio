@@ -57,6 +57,24 @@ const IndexPage = ({ data }) => (
         </ProjectList>
       </SectionContent>
     </Section>
+
+    <Section id="contact">
+      <SectionContent>
+        <h1 className="center">Lets get started!</h1>
+        <p>
+          Using the form below, please share a few basic details about your
+          project. Once I receive your message, I'll be in touch as quickly as
+          possible to ask any clarifying questions and discuss potential next
+          steps. (You can also just use the form below to say hi if you'd like!)
+        </p>
+      </SectionContent>
+    </Section>
+
+    <Section id="footer">
+      <SectionContent>
+        <h1> // FOOTER </h1>
+      </SectionContent>
+    </Section>
   </>
 )
 

@@ -62,12 +62,14 @@ h3 {
   font-size: 1.3rem;
 }
 
-div#services {
+div#services,
+div#contact {
   background-color: #ccc;
   color: #000;
 }
 
-div#portfolio {
+div#portfolio,
+div#footer {
   background-color: #8e4444;
   color: white;
 }

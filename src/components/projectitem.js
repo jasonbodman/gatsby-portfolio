@@ -4,7 +4,7 @@ import Image from "gatsby-image"
 
 const ProjectItem = props => (
   <Project>
-    <Image fluid={props.image} alt={props.title} />
+    <ProjectImage fluid={props.image} alt={props.title} />
     <ProjectInfo>
       <h3>{props.title}</h3>
       <p>{props.url}</p>
@@ -26,8 +26,9 @@ const Project = styled.div`
   padding: 15px;
 `
 
-const ProjectImage = styled.img`
-  width: 100%;
+const ProjectImage = styled(Image)`
+  width: 50%;
+  margin: 10px auto 25px;
 `
 
 const ProjectInfo = styled.div`

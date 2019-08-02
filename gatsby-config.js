@@ -34,6 +34,8 @@ module.exports = {
         dataset: "production",
         // a token with read permissions is required
         // if you have a private dataset
+        overlayDrafts: true,
+        watchMode: true,
         token:
           process.env
             .skjRztiT1u2ljmtonfZxGrK5RNDKbflTnMNyyJZsBmLCBGmZ5ZmEjTArkHfVfluCANwUm2eEENFJXSan0A1sis3ONiJuaPsq70EtjyTLgr61SLaILP2oeqXIPF1CY9Y8XQCgO8hKI4bzi6LoM1SY4VnVPTACDE1VV5HCs3MYFWyZL6HPAkhr,

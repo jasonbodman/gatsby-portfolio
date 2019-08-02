@@ -30,21 +30,13 @@ const IndexPage = ({ data }) => (
         </p>
 
         <ServiceList>
-          <ServiceItem
-            title="Full Web Design"
-            image="../images/responsive.jpg"
-            description="Starting from scratch, I can build you a mobile repsonsive website that represents your brand, strategically engages your customers, and helps you meet your goals. I can incorporate a variety of features that will help make your work easier like ecommerce products or content management systems."
-          />
-          <ServiceItem
-            title="Redesign and Optimization"
-            image="../images/tools.jpg"
-            description="If you feel that your current website needs a facelift or you recently updated your business' branding or voice, I can help to bring your vision to life while ensuring that your online presence is modern, accessible, and brings you closer to your customers."
-          />
-          <ServiceItem
-            title="Feature Installation"
-            image="../images/startup.jpg"
-            description="Whether your business is ready to finally launch that industry blog or you want your products to be available online through an ecommerce platform, I can help your business take the next step. Together, we will define what platform or tool works best to meet your need and identify the best plan to incorporate it into your new or existing website."
-          />
+          {data.allSanityService.edges.map(({ node: service }) => (
+            <ServiceItem
+              title={service.title}
+              image={service.mainImage.asset.fluid}
+              description={service.description}
+            />
+          ))}
         </ServiceList>
       </SectionContent>
     </Section>

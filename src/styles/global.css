@@ -1,22 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway|Zeyada");
+import url('https://fonts.googleapis.com/css?family=Raleway|Zeyada')
 
 /* GLOBAL STYLES */
 :root {
-  font-family: Raleway, sans-serif;
   width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   --blue: #2a60a0;
   --red: #8e4444;
-  background: #ccc;
 }
 
 * {
-  width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Raleway, sans-serif;
 }
 
 /* STYLES */
@@ -29,7 +27,7 @@
 }
 
 .subtitle {
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 .center {
@@ -51,7 +49,7 @@ section {
 
 h1 {
   font-family: Zeyada, Raleway, sans-serif;
-  font-size: 1.9rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -62,4 +60,16 @@ h2 {
 h3 {
   font-family: Raleway, sans-serif;
   font-size: 1.3rem;
+}
+
+div#services,
+div#contact {
+  background-color: #ccc;
+  color: #000;
+}
+
+div#portfolio,
+div#footer {
+  background-color: #8e4444;
+  color: white;
 }

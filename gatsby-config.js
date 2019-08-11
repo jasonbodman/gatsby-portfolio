@@ -2,9 +2,9 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Jason Bodman`,
+    description: `Freelance Web Developer - Hi, I'm Jason and together we can build a website that fits your brand while helping engage your customers in ways that help your business be more successful.`,
+    author: `@bodmand1`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -36,6 +36,21 @@ module.exports = {
         icon: `src/images/logo-white.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-source-sanity",
+      options: {
+        projectId: "173jiql6",
+        dataset: "production",
+        // a token with read permissions is required
+        // if you have a private dataset
+        overlayDrafts: true,
+        watchMode: true,
+        token:
+          process.env
+            .skjRztiT1u2ljmtonfZxGrK5RNDKbflTnMNyyJZsBmLCBGmZ5ZmEjTArkHfVfluCANwUm2eEENFJXSan0A1sis3ONiJuaPsq70EtjyTLgr61SLaILP2oeqXIPF1CY9Y8XQCgO8hKI4bzi6LoM1SY4VnVPTACDE1VV5HCs3MYFWyZL6HPAkhr,
+      },
+    },
+    `gatsby-plugin-styled-components`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

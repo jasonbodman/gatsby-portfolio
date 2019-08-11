@@ -15,7 +15,7 @@ const ProjectItem = props => (
 )
 
 const Project = styled.div`
-  width: 100%;
+  width: 45%;
   max-width: 450px;
   background-color: #fff;
   color: #000;

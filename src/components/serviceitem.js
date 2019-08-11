@@ -17,9 +17,10 @@ const ServiceItem = props => (
 const ServiceImage = styled.div`
   background-color: #fff;
   border-radius: 50%;
-  width: 50%;
+  width: 70%;
   height: auto;
   margin: 0 auto;
+  padding: 15%;
   box-shadow: 0px 0px 30px -10px black;
 `
 

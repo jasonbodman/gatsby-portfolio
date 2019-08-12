@@ -5,6 +5,7 @@ import img from "../images/main2.jpg"
 import SEO from "../components/seo"
 import ServiceItem from "../components/serviceitem"
 import ProjectItem from "../components/projectitem"
+import Form from "../components/form"
 
 const IndexPage = ({ data }) => (
   <>
@@ -67,6 +68,7 @@ const IndexPage = ({ data }) => (
           possible to ask any clarifying questions and discuss potential next
           steps. (You can also just use the form below to say hi if you'd like!)
         </p>
+        <Form />
       </SectionContent>
     </Section>
 

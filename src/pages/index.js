@@ -1,5 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+import Image from "gatsby-image"
+import Logo from "../images/logo-black.png"
 import img from "../images/main2.jpg"
 
 import SEO from "../components/seo"
@@ -75,7 +77,11 @@ const IndexPage = ({ data }) => (
     <Section id="footer">
       <SectionContent>
         <FooterTop>
-          <FooterLeft>LEFT</FooterLeft>
+          <FooterLeft>
+            <FooterLogo>
+              <img src={Logo} />
+            </FooterLogo>
+          </FooterLeft>
 
           <FooterRight>
             <h2>Connect with me at:</h2>
@@ -186,18 +192,21 @@ const ProjectList = styled.div`
 const FooterTop = styled.div`
   width: 100%;
   flex-wrap: wrap;
+  display: inline-block;
 `
 
 const FooterLeft = styled.div`
   width: 30%;
-  display: inline-block;
 `
 
 const FooterRight = styled.div`
   width: 70%;
-  display: inline-block;
   text-align: right;
   margin: auto;
+`
+
+const FooterLogo = styled.div`
+  max-width: 100px;
 `
 
 const FooterBottom = styled.div`

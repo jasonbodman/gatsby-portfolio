@@ -32,9 +32,8 @@ const ProjectImage = styled(Image)`
 `
 
 const ProjectInfo = styled.div`
-.project-info {
-	width: 100%;
-	padding: 20px;
+  width: 100%;
+  padding: 20px;
 `
 
 const ProjectQuote = styled.div`

@@ -90,6 +90,10 @@ const IndexPage = ({ data }) => (
             </p>
           </FooterRight>
         </FooterTop>
+        <FooterBottom>
+          <p>&copy; Jason Bodman, 2018. All rights reserved.</p>
+          <p>All icons designed by Freepik from Flaticon.</p>
+        </FooterBottom>
       </SectionContent>
     </Section>
   </>
@@ -194,6 +198,10 @@ const FooterRight = styled.div`
   display: inline-block;
   text-align: right;
   margin: auto;
+`
+
+const FooterBottom = styled.div`
+  text-align: center;
 `
 
 export default IndexPage

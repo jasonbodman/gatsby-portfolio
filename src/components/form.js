@@ -3,67 +3,75 @@ import styled from "styled-components"
 
 const Form = () => (
   <contactForm>
-    <form
-      method="post"
-      id="contactform"
-      class="form"
-      action="../contact_form.php"
-    >
-      <inputBlock>
-        <inputLeft>
+    <form method="post" id="contactform" class="form" action="#">
+      <InputBlock>
+        <InputLeft>
           <label for="name">
             What is your name?*>
             <Input type="text" id="name" name="name" />
           </label>
-        </inputLeft>
+        </InputLeft>
 
-        <inputRight>
+        <InputRight>
           <label for="phone">
             What is the best phone number to reach you at?*
             <Input type="phoneUS" id="phone" name="phone" />
           </label>
-        </inputRight>
-      </inputBlock>
+        </InputRight>
+      </InputBlock>
 
-      <inputBlock>
-        <inputLeft>
+      <InputBlock>
+        <InputLeft>
           <label for="email">
             Where should we email you?*
             <Input type="email" id="email" name="email"></Input>
           </label>
-        </inputLeft>
+        </InputLeft>
 
-        <inputRight>
+        <InputRight>
           <label for="website">
             What is the URL of your current website (if applicable)?
             <Input type="url" id="website" name="website" />
           </label>
-        </inputRight>
-      </inputBlock>
+        </InputRight>
+      </InputBlock>
 
-      <inputBlock>
-        <label for="message">
-          Please share a brief description of your project or your question:
-          <textarea id="message" name="message" />
-        </label>
-      </inputBlock>
+      <InputBlock>
+        <InputCenter>
+          <label for="message">
+            Please share a brief description of your project or your question:
+            <InputBox id="message" name="message" />
+          </label>
+        </InputCenter>
+      </InputBlock>
     </form>
   </contactForm>
 )
 
-const inputBlock = styled.div`
+const InputBlock = styled.div`
   display: block;
 `
 
-const inputLeft = styled.div`
-  display: block;
+const InputLeft = styled.div`
+  display: inline-block;
   margin-top: 20px;
-  margin-right: 20px;
+  padding: 0px 10px;
+  width: 49%;
 `
 
-const inputRight = styled.div`
+const InputRight = styled.div`
   margin-top: 20px;
-  display: block;
+  display: inline-block;
+  width: 49%;
+`
+
+const InputCenter = styled.div`
+  padding: 0px 10px;
+  width: 99%;
+`
+
+const InputBox = styled.textarea`
+  height: 200px;
 `
 
 const Input = styled.input`

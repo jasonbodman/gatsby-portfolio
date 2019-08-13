@@ -74,7 +74,22 @@ const IndexPage = ({ data }) => (
 
     <Section id="footer">
       <SectionContent>
-        <h1> // FOOTER </h1>
+        <FooterTop>
+          <FooterLeft>LEFT</FooterLeft>
+
+          <FooterRight>
+            <h2>Connect with me at:</h2>
+            <p>
+              <a href="mailto:hello@jasonbodman.com">hello@jasonbodman.com</a>
+            </p>
+            <p>
+              <a href="http://www.twitter.com/bodmand1">@bodmand1</a>
+            </p>
+            <p>
+              <a href="http://www.github.com/jasonbodman/">@jasonbodman</a>
+            </p>
+          </FooterRight>
+        </FooterTop>
       </SectionContent>
     </Section>
   </>
@@ -162,6 +177,23 @@ const ProjectList = styled.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+`
+
+const FooterTop = styled.div`
+  width: 100%;
+  flex-wrap: wrap;
+`
+
+const FooterLeft = styled.div`
+  width: 30%;
+  display: inline-block;
+`
+
+const FooterRight = styled.div`
+  width: 70%;
+  display: inline-block;
+  text-align: right;
+  margin: auto;
 `
 
 export default IndexPage

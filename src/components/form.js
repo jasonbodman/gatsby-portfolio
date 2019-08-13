@@ -7,7 +7,7 @@ const Form = () => (
       <InputBlock>
         <InputLeft>
           <label for="name">
-            What is your name?*>
+            What is your name?*
             <Input type="text" id="name" name="name" />
           </label>
         </InputLeft>

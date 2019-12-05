@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Image from "gatsby-image"
-import Logo from "../images/logo-black.png"
+import WhiteLogo from "../images/logo-white.png"
 import img from "../images/main2.jpg"
 
 import SEO from "../components/seo"
@@ -78,9 +77,7 @@ const IndexPage = ({ data }) => (
       <SectionContent>
         <FooterTop>
           <FooterLeft>
-            <FooterLogo>
-              <img src={Logo} />
-            </FooterLogo>
+            <FooterLogo src={WhiteLogo} />
           </FooterLeft>
 
           <FooterRight>
@@ -192,7 +189,7 @@ const ProjectList = styled.div`
 const FooterTop = styled.div`
   width: 100%;
   flex-wrap: wrap;
-  display: inline-block;
+  display: inline-flex;
 `
 
 const FooterLeft = styled.div`
@@ -205,7 +202,7 @@ const FooterRight = styled.div`
   margin: auto;
 `
 
-const FooterLogo = styled.div`
+const FooterLogo = styled.img`
   max-width: 100px;
 `
 

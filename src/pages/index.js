@@ -183,7 +183,7 @@ const Title = styled.div`
 `
 
 const Section = styled.div`
-  min-height: 500px;
+  min-height: 250px;
   padding-top: 50px;
   border-top: 5px #8e4444 solid;
 `

@@ -61,7 +61,7 @@ const Form = () => (
         </InputCenter>
       </InputBlock>
 
-      <button type="submit">Send</button>
+      <Submit type="submit">Send</Submit>
       <input type="reset" value="Clear" />
     </form>
   </contactForm>
@@ -75,18 +75,19 @@ const InputLeft = styled.div`
   display: inline-block;
   margin-top: 20px;
   padding: 0px 10px;
-  width: 49%;
+  width: 50%;
 `
 
 const InputRight = styled.div`
   margin-top: 20px;
   display: inline-block;
-  width: 49%;
+  width: 50%;
 `
 
 const InputCenter = styled.div`
   padding: 0px 10px;
-  width: 99%;
+  width: 100%;
+  margin-top: 20px;
 `
 
 const InputBox = styled.textarea`
@@ -96,11 +97,24 @@ const InputBox = styled.textarea`
 const Input = styled.input`
   width: 100%;
   background-color: #fff;
-  color: var(--blue);
+  color: #2a60a0;
   padding: 10px 5px;
   margin: 10px 0px;
   font-size: 1rem;
-  border: 2px solid var(--red);
+  border: 2px solid #8e4444;
+`
+
+const Submit = styled.button`
+  width: 100%;
+  background-color: #2a60a0;
+  color: #fff;
+  padding: 10px 5px;
+  margin: 20px auto 0px;
+  font-size: 1.2rem;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
 `
 
 export default Form

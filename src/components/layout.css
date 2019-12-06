@@ -7,7 +7,7 @@
   z-index: 2; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: var(--blue); /* Blue*/
+  background-color: #2a60a0; /* Blue*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -15,7 +15,7 @@
 }
 
 header {
-  background-color: var(--blue);
+  background-color: #2a60a0;
   z-index: 1;
   display: inline-flex;
   width: 50px;
@@ -29,7 +29,7 @@ header {
 
 header:hover {
   color: #fff;
-  background-color: var(--red);
+  background-color: #8e4444;
 }
 
 .nav-contact {
@@ -57,7 +57,7 @@ section#main {
   top: 60%;
   width: 95%;
   text-align: left;
-  background-color: var(--red);
+  background-color: #8e4444;
   color: #fff;
   padding: 20px 20px 20px 40px;
   box-shadow: 0px 0px 30px -10px black;
@@ -100,7 +100,7 @@ section#services {
 }
 
 section#portfolio {
-  background-color: var(--red);
+  background-color: #8e4444;
   padding: 50px 25px;
   margin: 0 auto;
   color: #fff;
@@ -169,7 +169,7 @@ section#contact {
 }
 
 footer {
-  background-color: var(--red);
+  background-color: #8e4444;
   color: #fff;
   padding: 25px 25px;
 }
@@ -208,21 +208,21 @@ img.thumbnail {
 input {
   width: 100%;
   background-color: #fff;
-  color: var(--blue);
+  color: #2a60a0;
   padding: 10px 5px;
   margin: 10px 0px;
   font-size: 1rem;
-  border: 2px solid var(--red);
+  border: 2px solid #8e4444;
 }
 
 textarea {
   width: 100%;
   background-color: #fff;
-  color: var(--blue);
+  color: #2a60a0;
   padding: 10px 5px;
   margin: 10px 0px;
   font-size: 1rem;
-  border: 2px solid var(--red);
+  border: 2px solid #8e4444;
 }
 
 .recaptcha-wrap {
@@ -240,7 +240,7 @@ textarea {
 
 input.submit {
   width: 75%;
-  background-color: var(--blue);
+  background-color: #2a60a0;
   color: #fff;
   padding: 10px 5px;
   margin: 20px auto 0px;

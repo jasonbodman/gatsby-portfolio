@@ -2,6 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import WhiteLogo from "../images/logo-white.png"
 import img from "../images/main2.jpg"
+import Mail from "../images/mail.png"
+import Twitter from "../images/twitter.png"
+import Github from "../images/github.png"
 
 import SEO from "../components/seo"
 import ServiceItem from "../components/serviceitem"
@@ -82,15 +85,32 @@ const IndexPage = ({ data }) => (
 
           <FooterRight>
             <h2>Connect with me at:</h2>
-            <p>
-              <a href="mailto:hello@jasonbodman.com">hello@jasonbodman.com</a>
-            </p>
-            <p>
-              <a href="http://www.twitter.com/bodmand1">@bodmand1</a>
-            </p>
-            <p>
-              <a href="http://www.github.com/jasonbodman/">@jasonbodman</a>
-            </p>
+            <FooterRightCard>
+              <p>
+                <ContactLink href="mailto:hello@jasonbodman.com">
+                  <ContactIcon src={Mail} />
+                  hello@jasonbodman.com
+                </ContactLink>
+              </p>
+            </FooterRightCard>
+
+            <FooterRightCard>
+              <p>
+                <ContactLink href="mailto:hello@jasonbodman.com">
+                  <ContactIcon src={Twitter} />
+                  hello@jasonbodman.com
+                </ContactLink>
+              </p>
+            </FooterRightCard>
+
+            <FooterRightCard>
+              <p>
+                <ContactLink href="http://www.github.com/jasonbodman/">
+                  <ContactIcon src={Github} />
+                  @jasonbodman
+                </ContactLink>
+              </p>
+            </FooterRightCard>
           </FooterRight>
         </FooterTop>
         <FooterBottom>
@@ -200,10 +220,27 @@ const FooterRight = styled.div`
   width: 70%;
   text-align: right;
   margin: auto;
+  display: block;
+`
+
+const FooterRightCard = styled.div`
+  display: block;
 `
 
 const FooterLogo = styled.img`
   max-width: 100px;
+`
+
+const ContactLink = styled.a`
+  color: #ffffff;
+  text-decoration: none;
+`
+
+const ContactIcon = styled.img`
+  width: 15px;
+  height: 15px;
+  margin: 0px 10px;
+  vertical-align: middle;
 `
 
 const FooterBottom = styled.div`

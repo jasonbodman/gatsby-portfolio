@@ -4,15 +4,15 @@ import Image from "gatsby-image"
 
 const ProjectItem = props => (
   <Project>
-    <ProjectLink href={props.url}>
+    <ProjectLink href={props.url} target="_blank">
       <ProjectImage fluid={props.image} alt={props.title} />
     </ProjectLink>
     <ProjectInfo>
-      <ProjectLink href={props.url}>
+      <ProjectLink href={props.url} target="_blank">
         <h3>{props.title}</h3>
       </ProjectLink>
 
-      <ProjectLink href={props.url}>
+      <ProjectLink href={props.url} target="_blank">
         <p>{props.url}</p>
       </ProjectLink>
 

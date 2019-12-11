@@ -4,10 +4,18 @@ import Image from "gatsby-image"
 
 const ProjectItem = props => (
   <Project>
-    <ProjectImage fluid={props.image} alt={props.title} />
+    <ProjectLink href={props.url}>
+      <ProjectImage fluid={props.image} alt={props.title} />
+    </ProjectLink>
     <ProjectInfo>
-      <h3>{props.title}</h3>
-      <p>{props.url}</p>
+      <ProjectLink href={props.url}>
+        <h3>{props.title}</h3>
+      </ProjectLink>
+
+      <ProjectLink href={props.url}>
+        <p>{props.url}</p>
+      </ProjectLink>
+
       <ProjectQuote>{props.quote}</ProjectQuote>
       <p>-{props.client}</p>
     </ProjectInfo>
@@ -38,6 +46,11 @@ const ProjectInfo = styled.div`
 
 const ProjectQuote = styled.div`
   padding: 25px;
+`
+
+const ProjectLink = styled.a`
+  color: #000;
+  text-decoration: none;
 `
 
 export default ProjectItem

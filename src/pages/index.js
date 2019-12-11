@@ -114,7 +114,10 @@ const IndexPage = ({ data }) => (
           </FooterRight>
         </FooterTop>
         <FooterBottom>
-          <p>&copy; Jason Bodman, 2018. All rights reserved.</p>
+          <p>
+            &copy; Jason Bodman, {new Date().getFullYear()}. All rights
+            reserved.
+          </p>
           <p>All icons designed by Freepik from Flaticon.</p>
         </FooterBottom>
       </SectionContent>

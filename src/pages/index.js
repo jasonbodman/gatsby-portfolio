@@ -87,7 +87,10 @@ const IndexPage = ({ data }) => (
             <h2>Connect with me at:</h2>
             <FooterRightCard>
               <p>
-                <ContactLink href="mailto:hello@jasonbodman.com">
+                <ContactLink
+                  href="mailto:hello@jasonbodman.com"
+                  target="_blank"
+                >
                   <ContactIcon src={Mail} />
                   hello@jasonbodman.com
                 </ContactLink>
@@ -96,7 +99,10 @@ const IndexPage = ({ data }) => (
 
             <FooterRightCard>
               <p>
-                <ContactLink href="mailto:hello@jasonbodman.com">
+                <ContactLink
+                  href="http://www.twitter.com/bodmand1"
+                  target="_blank"
+                >
                   <ContactIcon src={Twitter} />
                   @bodmand1
                 </ContactLink>
@@ -105,7 +111,10 @@ const IndexPage = ({ data }) => (
 
             <FooterRightCard>
               <p>
-                <ContactLink href="http://www.github.com/jasonbodman/">
+                <ContactLink
+                  href="http://www.github.com/jasonbodman/"
+                  target="_blank"
+                >
                   <ContactIcon src={Github} />
                   @jasonbodman
                 </ContactLink>

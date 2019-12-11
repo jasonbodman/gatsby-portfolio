@@ -98,7 +98,7 @@ const IndexPage = ({ data }) => (
               <p>
                 <ContactLink href="mailto:hello@jasonbodman.com">
                   <ContactIcon src={Twitter} />
-                  hello@jasonbodman.com
+                  @bodmand1
                 </ContactLink>
               </p>
             </FooterRightCard>

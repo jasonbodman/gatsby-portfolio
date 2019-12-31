@@ -15,9 +15,6 @@ const ProjectItem = props => (
       <ProjectLink href={props.url} target="_blank">
         <p>{props.url}</p>
       </ProjectLink>
-
-      <ProjectQuote>{props.quote}</ProjectQuote>
-      <p>-{props.client}</p>
     </ProjectInfo>
   </Project>
 )
@@ -42,10 +39,6 @@ const ProjectImage = styled(Image)`
 const ProjectInfo = styled.div`
   width: 100%;
   padding: 20px;
-`
-
-const ProjectQuote = styled.div`
-  padding: 25px;
 `
 
 const ProjectLink = styled.a`

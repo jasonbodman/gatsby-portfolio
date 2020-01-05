@@ -17,12 +17,17 @@ const IndexPage = ({ data }) => (
         <h1>Thank You!</h1>
         <p className="subtitle">
           Thank you for reaching out. I will review your message and be in touch
-          shortly! You can always email me directly at
-          <a href="mailto:hello@jasonbodman.com">hello@jason&zwnj;bodman.com</a>
-          .
+          shortly! You can always email me directly at{" "}
+          <a href="mailto:hello@jasonbodman.com" style={{ color: `#fff` }}>
+            hello@jason&zwnj;bodman.com
+          </a>{" "}
+          at any time.
+          <br></br>
         </p>
         <p className="subtitle">
-          <Link to="/">Head back home</Link>
+          <Link to="/" style={{ color: `#fff` }}>
+            Head back home
+          </Link>
         </p>
       </Title>
     </Container>

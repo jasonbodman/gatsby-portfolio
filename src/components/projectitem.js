@@ -29,6 +29,11 @@ const Project = styled.div`
   display: block;
   border-radius: 10px;
   padding: 15px;
+
+  @media (max-width: 768px) {
+    width: 95%;
+    max-width: 500px;
+  }
 `
 
 const ProjectImage = styled(Image)`

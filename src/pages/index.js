@@ -179,6 +179,10 @@ const Container = styled.div`
   background-size: cover;
   width: 100%;
   height: 100vh;
+
+  @media (max-width: 500px) {
+    background-size: auto;
+  }
 `
 
 const Title = styled.div`
@@ -197,6 +201,7 @@ const Title = styled.div`
 const Section = styled.div`
   min-height: 250px;
   padding-top: 50px;
+  padding-bottom: 10px;
   border-top: 5px #8e4444 solid;
 `
 

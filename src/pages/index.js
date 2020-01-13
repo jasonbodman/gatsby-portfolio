@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import WhiteLogo from "../images/logo-white.png"
-import img from "../images/main2.jpg"
+import bgimg from "../images/main2.jpg"
 import Mail from "../images/mail.png"
 import Twitter from "../images/twitter.png"
 import Github from "../images/github.png"
@@ -172,7 +172,7 @@ export const query = graphql`
 `
 
 const Container = styled.div`
-  background-image: url(${img});
+  background-image: url(${bgimg});
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

@@ -216,6 +216,10 @@ const ProjectList = styled.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `
 
 const FooterTop = styled.div`
